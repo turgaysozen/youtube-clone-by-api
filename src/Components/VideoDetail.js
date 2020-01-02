@@ -3,12 +3,7 @@ import { Paper, Typography } from "@material-ui/core";
 
 class VideoDetail extends React.Component {
     render() {
-        if (this.props.error !== null) {
-            const errorMessage = this.props.error;
-            console.log(errorMessage)
-        return <div>{errorMessage} - Youtube Api Request Exceeded Limit</div>
-        }
-
+        if (this.props.error !== null) return <div>{this.props.error} - Youtube Api Request Exceeded Limit</div>
         if (!this.props.video) return <div>Loading...</div>
 
         const videoSrc = `https://www.youtube.com/embed/${this.props.video.id.videoId}`;

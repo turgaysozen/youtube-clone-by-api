@@ -1,5 +1,4 @@
 import React from "react";
-// import youtube from "./api/youtube"
 import { Grid } from "@material-ui/core";
 import SearchBar from "./Components/SearchBar";
 import VideoDetail from "./Components/VideoDetail";
@@ -8,6 +7,7 @@ import youtube from "./api/youtube";
 
 require('dotenv').config();
 const apiKey = process.env.REACT_APP_API_KEY;
+
 let results = [];
 
 class App extends React.Component {
@@ -76,7 +76,7 @@ class App extends React.Component {
     }
 }
 
-//mix videos as randdomly
+//mix videos as randomly
 function MixVideos(videos) {
     let mixedVideos = videos
         .map((a) => ({ sort: Math.random(), value: a }))
@@ -85,6 +85,5 @@ function MixVideos(videos) {
 
     return mixedVideos;
 }
-
 
 export default App;
