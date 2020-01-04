@@ -8,7 +8,7 @@ import youtube from "./api/youtube";
 require('dotenv').config();
 const apiKey = process.env.REACT_APP_API_KEY;
 
-let results, newVideoList = [];
+let results = [];
 
 class App extends React.Component {
     state = {
