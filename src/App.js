@@ -59,13 +59,13 @@ class App extends React.Component {
             <Grid justify="center" container spacing={2}>
                 <Grid item xs={10}>
                     <Grid container spacing={2}>
-                        <Grid item xs={12}>
+                        <Grid style={{marginTop: '20px', marginBottom: '10px'}} item xs={12}>
                             <SearchBar onFormSubmit={this.handleSubmit} />
                         </Grid>
                         <Grid item xs={8}>
                             <VideoDetail error={this.state.errorMessage} video={this.state.selectedVideo} />
                         </Grid>
-                        <Grid style={{ marginTop: '30px', marginBottom: '30px' }} spacing={10} item xs={3}>
+                        <Grid style={{ marginTop: '30px', marginBottom: '30px' }} spacing={5} item xs={3}>
                             <VideoList onVideoSelect={this.selectVideoHandle} videos={this.state.videos} />
                         </Grid>
                     </Grid>
