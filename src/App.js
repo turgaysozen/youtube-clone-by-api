@@ -18,7 +18,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-         this.handleSubmit('2020');
+         this.handleSubmit('2020 usa');
     }
 
     selectVideoHandle = (video) => {
