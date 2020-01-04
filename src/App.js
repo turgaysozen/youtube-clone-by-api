@@ -18,7 +18,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        this.handleSubmit('2020');
+         this.handleSubmit('2020');
     }
 
     selectVideoHandle = (video) => {
@@ -41,7 +41,6 @@ class App extends React.Component {
                     q: searchTerm
                 }
             });
-
             //filter old videos by old videoId
             results = res.data.items.filter(v => v.id.videoId !== undefined);
 

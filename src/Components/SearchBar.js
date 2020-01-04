@@ -4,6 +4,7 @@ import { Paper, TextField } from "@material-ui/core";
 class SearchBar extends Component {
     state = {
         searchTerm: '',
+        isClick: false,
     }
 
     handleChange = (e) => this.setState({ searchTerm: e.target.value });
@@ -11,7 +12,6 @@ class SearchBar extends Component {
     handleSubmit = (e) => {
         const { searchTerm } = this.state;
         const { onFormSubmit } = this.props;
-
         onFormSubmit(searchTerm);
         e.preventDefault();
     }
