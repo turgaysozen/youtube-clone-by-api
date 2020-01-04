@@ -8,7 +8,7 @@ function VideoItem({ video, videoSelect }) {
                 <Paper onClick={() => videoSelect(video)} style={{ display: 'flex',  width:'100%', cursor:'pointer'}}>
                     <img style={{ marginRight: '10px', width:'45%' }} alt="thumbnail" src={video.snippet.thumbnails.medium.url}/>
                     <Typography style={{ fontSize: '14px', marginRight:'5px' }}>
-                        <b>{video.snippet.title}</b>
+                        <b>{video.snippet.title.replace('&#39;',"'").replace('&#39;',"'").replace('&amp;','&').replace('&amp;','&').replace('&quot;','"').replace('&quot;','"')}</b>
                     </Typography>
                 </Paper>
             </Grid>

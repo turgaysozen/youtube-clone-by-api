@@ -15,13 +15,13 @@ class VideoDetail extends React.Component {
                     </Paper>
                     <Paper elevation={6} style={{ padding: '15px', height: '190px' }}>
                         <Typography variant="h4">
-                            {this.props.video.snippet.title}
+                            {this.props.video.snippet.title.replace('&#39;',"'").replace('&#39;',"'").replace('&amp;','&').replace('&amp;','&').replace('&quot;','"').replace('&quot;','"')}
                         </Typography>
                         <Typography variant="h5">
-                            {this.props.video.snippet.channelTitle}
+                            {this.props.video.snippet.channelTitle.replace('&#39;',"'").replace('&#39;',"'").replace('&amp;','&').replace('&amp;','&').replace('&quot;','"').replace('&quot;','"')}
                         </Typography>
                         <Typography variant="h6">
-                            {this.props.video.snippet.description}
+                            {this.props.video.snippet.description.replace('&#39;',"'").replace('&#39;',"'").replace('&amp;','&').replace('&amp;','&').replace('&quot;','"').replace('&quot;','"')}
                         </Typography>
                     </Paper>
                 </React.Fragment>
