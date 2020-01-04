@@ -26,7 +26,7 @@ class App extends React.Component {
 
         this.setState({
             selectedVideo: video,
-            videos: MixVideos(newResults).slice(0, 5),
+            videos: MixVideos(newResults).slice(0, 7),
         });
     }
 
@@ -49,7 +49,7 @@ class App extends React.Component {
         }
 
         this.setState({
-            videos: MixVideos(results).slice(1).slice(0, 5),
+            videos: MixVideos(results).slice(1).slice(0, 7),
             selectedVideo: results[0]
         });
     }

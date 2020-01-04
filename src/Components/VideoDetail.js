@@ -10,8 +10,8 @@ class VideoDetail extends React.Component {
         return (
             <div>
                 <React.Fragment>
-                    <Paper elevation={6} style={{ height: '500px', width: '100%' }}>
-                        <iframe frameBorder="0" height="500px" width="100%" title="Video Player" src={videoSrc}></iframe>
+                    <Paper elevation={6} style={{ height: '565px', width: '100%' }}>
+                        <iframe frameBorder="0" height="550px" width="100%" title="Video Player" src={videoSrc}></iframe>
                     </Paper>
                     <Paper elevation={6} style={{ padding: '15px', height: '190px' }}>
                         <Typography variant="h4">
