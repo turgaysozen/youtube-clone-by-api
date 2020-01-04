@@ -43,7 +43,7 @@ class App extends React.Component {
             });
             //filter old videos by old videoId
             results = res.data.items.filter(v => v.id.videoId !== undefined);
-
+            console.log(results)
         } catch (error) {
             this.setState({errorMessage: error.message});
         }
