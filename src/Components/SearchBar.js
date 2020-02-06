@@ -4,7 +4,6 @@ import { Paper, TextField } from "@material-ui/core";
 class SearchBar extends Component {
     state = {
         searchTerm: '',
-        isClick: false,
     }
 
     handleChange = (e) => this.setState({ searchTerm: e.target.value });
@@ -20,7 +19,7 @@ class SearchBar extends Component {
         return (
             <Paper elevation={6} style={{ padding: '15px' }}>
                 <form onSubmit={this.handleSubmit}>
-                    <TextField fullWidth label='Search...' onChange={this.handleChange} />
+                <TextField fullWidth label='Search something... ' onChange={this.handleChange} />
                 </form>
             </Paper>
         )

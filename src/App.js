@@ -6,6 +6,7 @@ import VideoList from "./Components/VideoList";
 import youtube from "./api/youtube";
 
 require('dotenv').config();
+
 const apiKey = process.env.REACT_APP_API_KEY;
 
 let results = [];
